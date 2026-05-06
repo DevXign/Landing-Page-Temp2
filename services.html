@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services & Pricing | Freelance</title>
+    <meta name="description" content="View pricing for Logo Design, Poster Design, and Video Editing services.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="glass-nav">
+        <nav>
+            <a href="index.html" class="logo">f<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="index.html#promotion">Promotion</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-outline mono">Get Quote</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="page-header">
+                <span class="mono" style="color: var(--accent-color); margin-bottom: 1rem; display: block;">Clear Pricing</span>
+                <h1>Our Services</h1>
+                <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">Choose the perfect plan for your next creative project. Transparent pricing, no hidden fees.</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-target="logo-design">Logo Design</button>
+                <button class="tab-btn" data-target="poster-design">Poster Design</button>
+                <button class="tab-btn" data-target="video-editing">Video Editing</button>
+            </div>
+
+            <!-- Logo Design Pricing -->
+            <div id="logo-design" class="pricing-grid active">
+                <div class="pricing-card glass">
+                    <h3 class="plan-name">Basic</h3>
+                    <div class="plan-price"><span>₹</span>299</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 1 Initial Concept</li>
+                        <li><i class="fa-solid fa-check"></i> 2 Revisions</li>
+                        <li><i class="fa-solid fa-check"></i> High-Res JPG/PNG</li>
+                        <li style="opacity: 0.4"><i class="fa-solid fa-xmark"></i> Source File</li>
+                    </ul>
+                    <a href="contact.html?service=logo-basic" class="btn btn-outline" style="text-align: center;">Select Plan</a>
+                </div>
+                
+                <div class="pricing-card glass pro">
+                    <div class="pro-badge">POPULAR</div>
+                    <h3 class="plan-name">Plus</h3>
+                    <div class="plan-price"><span>₹</span>799</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 3 Initial Concepts</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Revisions</li>
+                        <li><i class="fa-solid fa-check"></i> High-Res & Transparent</li>
+                        <li><i class="fa-solid fa-check"></i> Source File (AI/EPS)</li>
+                    </ul>
+                    <a href="contact.html?service=logo-plus" class="btn btn-primary" style="text-align: center;">Select Plan</a>
+                </div>
+
+                <div class="pricing-card glass">
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price"><span>₹</span>1499</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> 5 Premium Concepts</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Revisions</li>
+                        <li><i class="fa-solid fa-check"></i> Full Brand Identity Kit</li>
+                        <li><i class="fa-solid fa-check"></i> 3D Mockups included</li>
+                    </ul>
+                    <a href="contact.html?service=logo-pro" class="btn btn-outline" style="text-align: center;">Select Plan</a>
+                </div>
+            </div>
+
+            <!-- Poster Design Pricing -->
+            <div id="poster-design" class="pricing-grid">
+                <div class="pricing-card glass">
+                    <h3 class="plan-name">Basic</h3>
+                    <div class="plan-price"><span>₹</span>299</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Standard Poster Design</li>
+                        <li><i class="fa-solid fa-check"></i> 1 Revision</li>
+                        <li><i class="fa-solid fa-check"></i> Print-Ready PDF</li>
+                        <li style="opacity: 0.4"><i class="fa-solid fa-xmark"></i> Custom Assets</li>
+                    </ul>
+                    <a href="contact.html?service=poster-basic" class="btn btn-outline" style="text-align: center;">Select Plan</a>
+                </div>
+                
+                <div class="pricing-card glass pro">
+                    <div class="pro-badge">POPULAR</div>
+                    <h3 class="plan-name">Plus</h3>
+                    <div class="plan-price"><span>₹</span>699</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Premium Poster Design</li>
+                        <li><i class="fa-solid fa-check"></i> 3 Revisions</li>
+                        <li><i class="fa-solid fa-check"></i> Social Media Kit</li>
+                        <li><i class="fa-solid fa-check"></i> Custom Graphics</li>
+                    </ul>
+                    <a href="contact.html?service=poster-plus" class="btn btn-primary" style="text-align: center;">Select Plan</a>
+                </div>
+
+                <div class="pricing-card glass">
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price"><span>₹</span>1199</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Campaign Series (Up to 3)</li>
+                        <li><i class="fa-solid fa-check"></i> Unlimited Revisions</li>
+                        <li><i class="fa-solid fa-check"></i> Source Files</li>
+                        <li><i class="fa-solid fa-check"></i> Priority Delivery</li>
+                    </ul>
+                    <a href="contact.html?service=poster-pro" class="btn btn-outline" style="text-align: center;">Select Plan</a>
+                </div>
+            </div>
+
+            <!-- Video Editing Pricing -->
+            <div id="video-editing" class="pricing-grid">
+                <div class="pricing-card glass">
+                    <h3 class="plan-name">Basic</h3>
+                    <div class="plan-price"><span>₹</span>499</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Up to 60s Video (Reels/Shorts)</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Color Correction</li>
+                        <li><i class="fa-solid fa-check"></i> Background Music</li>
+                        <li style="opacity: 0.4"><i class="fa-solid fa-xmark"></i> Motion Graphics</li>
+                    </ul>
+                    <a href="contact.html?service=video-basic" class="btn btn-outline" style="text-align: center;">Select Plan</a>
+                </div>
+                
+                <div class="pricing-card glass pro">
+                    <div class="pro-badge">POPULAR</div>
+                    <h3 class="plan-name">Plus</h3>
+                    <div class="plan-price"><span>₹</span>999</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Up to 5 Min Video</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced Color Grading</li>
+                        <li><i class="fa-solid fa-check"></i> Simple Motion Graphics</li>
+                        <li><i class="fa-solid fa-check"></i> Captions/Subtitles</li>
+                    </ul>
+                    <a href="contact.html?service=video-plus" class="btn btn-primary" style="text-align: center;">Select Plan</a>
+                </div>
+
+                <div class="pricing-card glass">
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price"><span>₹</span>1499</div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-check"></i> Up to 15 Min Video</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Transitions & FX</li>
+                        <li><i class="fa-solid fa-check"></i> Advanced Audio Mixing</li>
+                        <li><i class="fa-solid fa-check"></i> Thumbnail Design Included</li>
+                    </ul>
+                    <a href="contact.html?service=video-pro" class="btn btn-outline" style="text-align: center;">Select Plan</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Freelance Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
