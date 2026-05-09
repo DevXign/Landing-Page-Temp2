@@ -1,50 +1,451 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freelance Services | Home</title>
-    <meta name="description" content="Professional freelance design and video editing services. Clean, modern, and high-quality results.">
+    <title>devxign.tech | Professional Freelance Agency</title>
+    <meta name="description" content="Clean minimal freelance agency turning vision into digital distinction.">
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome for icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Outfit Font for clean geometric look -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="glass-nav">
-        <nav>
-            <a href="index.html" class="logo">f<span>.</span></a>
+    <header class="navbar">
+        <nav class="container">
+            <a href="#home" class="logo"><img src="Company logo.jpeg" alt="Company Logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#promotion">Promotion</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-outline mono">Get Quote</a>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-pill desktop-only">GET QUOTE</a>
+                <button class="mobile-menu-btn" aria-label="Menu">⋯</button>
+            </div>
         </nav>
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown">
+            <ul class="mobile-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#promotion">Promotion</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-pill mobile-quote-btn">GET QUOTE</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
-        <section class="hero container">
-            <div class="hero-content">
-                <span class="hero-tag mono">Available for freelance</span>
-                <h1>Crafting digital<br>experiences.</h1>
-                <p>Minimalist design and dynamic video editing tailored to elevate your brand. Simplicity meets functionality.</p>
-                <div class="hero-btns" style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
-                    <a href="services.html" class="btn btn-primary">View Services</a>
-                    <a href="contact.html" class="btn btn-outline">Let's Talk</a>
+        <!-- HOME SECTION -->
+        <section id="home" class="section hero section-scroll">
+            <div class="container hero-content">
+                <h1 class="hero-title fade-in-up">We turn vision into digital distinction</h1>
+                <div class="hero-illustration">
+                    <svg viewBox="0 0 400 300" class="anim-svg">
+                        <g class="laptop-float">
+                            <!-- Minimal Line Art Laptop & Code -->
+                            <rect x="100" y="120" width="200" height="120" rx="10" fill="none" stroke="var(--text-main)" stroke-width="4"/>
+                            <path d="M 80 240 L 320 240 L 330 260 L 70 260 Z" fill="none" stroke="var(--text-main)" stroke-width="4"/>
+                            <rect x="130" y="140" width="140" height="80" rx="4" fill="var(--accent-color)" opacity="0.1"/>
+                            <path d="M 140 160 L 200 160" stroke="var(--accent-color)" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 140 180 L 260 180" stroke="var(--accent-color)" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 140 200 L 180 200" stroke="var(--accent-color)" stroke-width="4" stroke-linecap="round"/>
+                        </g>
+                    </svg>
                 </div>
             </div>
-            
-            <!-- Abstract decorative elements -->
-            <div style="position: absolute; top: 10%; left: 5%; width: 300px; height: 300px; background: radial-gradient(circle, rgba(59,179,113,0.1) 0%, transparent 70%); border-radius: 50%; z-index: -1;"></div>
-            <div style="position: absolute; bottom: 10%; right: 5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, transparent 70%); border-radius: 50%; z-index: -1;"></div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section services section-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Transparent pricing, no hidden fees.</p>
+                </div>
+                
+                <div class="services-illustration">
+                    <svg viewBox="0 0 200 100" class="anim-svg">
+                        <g class="tools-float">
+                            <!-- Minimal Pen Tool -->
+                            <path d="M 40 80 L 60 20 L 70 20 L 50 80 Z" fill="none" stroke="var(--accent-color)" stroke-width="3"/>
+                            <!-- Brush Tool -->
+                            <path d="M 100 80 L 100 40 C 100 20 120 20 120 40 L 120 80 Z" fill="none" stroke="var(--text-main)" stroke-width="3"/>
+                            <!-- Code Brackets -->
+                            <path d="M 160 30 L 140 50 L 160 70" fill="none" stroke="var(--accent-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M 170 30 L 190 50 L 170 70" fill="none" stroke="var(--accent-color)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="logo-design">Logo Design</button>
+                    <button class="tab-btn" data-target="poster-design">Poster Design</button>
+                    <button class="tab-btn" data-target="video-editing">Video Editing</button>
+                    <button class="tab-btn" data-target="social-media">Social Media Handling</button>
+                    <button class="tab-btn" data-target="website-design">Website Design</button>
+                </div>
+
+                <!-- Logo Design -->
+                <div id="logo-design" class="pricing-grid active">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price"><span>₹</span>299</div>
+                        <ul class="plan-features">
+                            <li>1 Initial Concept</li>
+                            <li>2 Revisions</li>
+                            <li>High-Res JPG/PNG</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card pro">
+                        <h3 class="plan-name">Plus</h3>
+                        <div class="plan-price"><span>₹</span>799</div>
+                        <ul class="plan-features">
+                            <li>3 Initial Concepts</li>
+                            <li>Unlimited Revisions</li>
+                            <li>Source File (AI/EPS)</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price"><span>₹</span>1499</div>
+                        <ul class="plan-features">
+                            <li>5 Premium Concepts</li>
+                            <li>Full Brand Identity Kit</li>
+                            <li>3D Mockups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Poster Design -->
+                <div id="poster-design" class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price"><span>₹</span>299</div>
+                        <ul class="plan-features">
+                            <li>Standard Poster Design</li>
+                            <li>1 Revision</li>
+                            <li>Print-Ready PDF</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card pro">
+                        <h3 class="plan-name">Plus</h3>
+                        <div class="plan-price"><span>₹</span>699</div>
+                        <ul class="plan-features">
+                            <li>Premium Poster Design</li>
+                            <li>3 Revisions</li>
+                            <li>Social Media Kit</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price"><span>₹</span>1199</div>
+                        <ul class="plan-features">
+                            <li>Campaign Series</li>
+                            <li>Unlimited Revisions</li>
+                            <li>Source Files</li>
+                        </ul>
+                    </div>
+
+                    <!-- Special Boxes -->
+                    <div class="special-boxes-container">
+                        <h3 class="special-heading">Visual Statements: High-Impact Print & Digital Posters</h3>
+                        <div class="special-boxes">
+                            <div class="special-box">
+                                <h4>Event Posters</h4>
+                                <p class="price-range">₹999 – ₹2,099 per poster</p>
+                                <ul>
+                                    <li>✓ Suitable for events, programs, launches</li>
+                                    <li>✓ Custom layout based on event theme</li>
+                                </ul>
+                                <a href="#contact" class="box-link">Get a Quote →</a>
+                            </div>
+                            <div class="special-box">
+                                <h4>Political Posters</h4>
+                                <p class="price-range">₹1,299 – ₹2,299 per poster</p>
+                                <ul>
+                                    <li>✓ Campaign-focused design</li>
+                                    <li>✓ High-impact typography & visuals</li>
+                                </ul>
+                                <a href="#contact" class="box-link">Get a Quote →</a>
+                            </div>
+                            <div class="special-box">
+                                <h4>Product Launch Posters</h4>
+                                <p class="price-range">₹1,499 – ₹2,599 per poster</p>
+                                <ul>
+                                    <li>✓ Brand-oriented promotional design</li>
+                                    <li>✓ Focus on product highlights</li>
+                                </ul>
+                                <a href="#contact" class="box-link">Get a Quote →</a>
+                            </div>
+                            <div class="special-box">
+                                <h4>Festival Posters</h4>
+                                <p class="price-range">₹399 – ₹999 per poster</p>
+                                <ul>
+                                    <li>✓ Festive colors & themes</li>
+                                    <li>✓ Suitable for seasonal promotions</li>
+                                </ul>
+                                <a href="#contact" class="box-link">Get a Quote →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div id="video-editing" class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price"><span>₹</span>499</div>
+                        <ul class="plan-features">
+                            <li>Up to 60s Video</li>
+                            <li>Basic Color Correction</li>
+                            <li>Background Music</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card pro">
+                        <h3 class="plan-name">Plus</h3>
+                        <div class="plan-price"><span>₹</span>999</div>
+                        <ul class="plan-features">
+                            <li>Up to 5 Min Video</li>
+                            <li>Simple Motion Graphics</li>
+                            <li>Captions/Subtitles</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price"><span>₹</span>1499</div>
+                        <ul class="plan-features">
+                            <li>Up to 15 Min Video</li>
+                            <li>Premium Transitions</li>
+                            <li>Advanced Audio Mixing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social Media Handling -->
+                <div id="social-media" class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price"><span>₹</span>2999</div>
+                        <ul class="plan-features">
+                            <li>1 Platform Management</li>
+                            <li>8 Posts / Month</li>
+                            <li>Basic Engagement</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card pro">
+                        <h3 class="plan-name">Plus</h3>
+                        <div class="plan-price"><span>₹</span>5999</div>
+                        <ul class="plan-features">
+                            <li>2 Platforms Management</li>
+                            <li>15 Posts / Month</li>
+                            <li>Content Strategy Planning</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price"><span>₹</span>9999</div>
+                        <ul class="plan-features">
+                            <li>Multi-Platform Management</li>
+                            <li>Daily Posts + Reels</li>
+                            <li>Full Account Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Website Design -->
+                <div id="website-design" class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Basic</h3>
+                        <div class="plan-price"><span>₹</span>4999</div>
+                        <ul class="plan-features">
+                            <li>1 Page Landing Site</li>
+                            <li>Responsive Design</li>
+                            <li>Basic Contact Form</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card pro">
+                        <h3 class="plan-name">Plus</h3>
+                        <div class="plan-price"><span>₹</span>9999</div>
+                        <ul class="plan-features">
+                            <li>Up to 5 Pages Website</li>
+                            <li>Custom UI/UX</li>
+                            <li>SEO Optimized Structure</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price"><span>₹</span>19999</div>
+                        <ul class="plan-features">
+                            <li>Full Web Application</li>
+                            <li>CMS Integration</li>
+                            <li>Premium Animations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMOTION SECTION -->
+        <section id="promotion" class="section promotion section-scroll">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Elevate your brand with content that commands attention.</h2>
+                </div>
+                
+                <div class="promotion-illustration">
+                    <svg viewBox="0 0 300 150" class="anim-svg">
+                        <g class="graph-float">
+                            <!-- Growth Graph -->
+                            <path d="M 20 120 L 80 80 L 140 100 L 220 40 L 280 20" fill="none" stroke="var(--accent-color)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="80" cy="80" r="4" fill="var(--text-main)" />
+                            <circle cx="140" cy="100" r="4" fill="var(--text-main)" />
+                            <circle cx="220" cy="40" r="4" fill="var(--text-main)" />
+                            <circle cx="280" cy="20" r="4" fill="var(--text-main)" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="features-row">
+                    <div class="feature-icon-box">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h4>Clear Strategy</h4>
+                        <p>Meticulous strategy</p>
+                    </div>
+                    <div class="feature-icon-box">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <h4>Fast Growth</h4>
+                        <p>Expanded impact</p>
+                    </div>
+                    <div class="feature-icon-box">
+                        <i class="fa-solid fa-handshake"></i>
+                        <h4>Strong Connect</h4>
+                        <p>Resonant engagement</p>
+                    </div>
+                    <div class="feature-icon-box">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4>Proven Results</h4>
+                        <p>Proven performance</p>
+                    </div>
+                </div>
+
+                <div class="promo-cards-row">
+                    <div class="promo-card">
+                        <h3>Brand Promotions</h3>
+                        <p class="promo-price">Starting from ₹7,099</p>
+                        <ul>
+                            <li>✓ Product reviews & unboxing videos</li>
+                            <li>✓ Trend-based & festival campaigns</li>
+                            <li>✓ Festive & seasonal promotions</li>
+                            <li>✓ Brand story telling</li>
+                            <li>✓ College or Community events</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get Started →</a>
+                    </div>
+                    <div class="promo-card">
+                        <h3>Shop & Business Promotions</h3>
+                        <p class="promo-price">Starting from ₹4,499</p>
+                        <ul>
+                            <li>✓ Local business promotions</li>
+                            <li>✓ New shop launch content</li>
+                            <li>✓ Awareness campaigns</li>
+                            <li>✓ Location-focused reach</li>
+                            <li>✓ Business profile content</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline">Get Started →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about section-scroll">
+            <div class="container">
+                <div class="section-header" style="margin-bottom: 0;">
+                    <h2>About Us</h2>
+                    <p style="max-width: 700px; margin: 0 auto; font-size: 1.2rem; line-height: 1.8;">
+                        devxign.tech is a professional Indian freelance agency dedicated to crafting premium digital experiences. We believe in the power of minimalist design combined with seamless functionality. Our mission is to transform your ideas into distinct digital realities that resonate with your audience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact section-scroll">
+            <div class="container contact-container">
+
+                <div class="contact-right">
+                    <form class="contact-form" id="contact-form" onsubmit="event.preventDefault();">
+                        <h2>Get in touch</h2>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Service needed</option>
+                                <option value="Logo Design">Logo Design</option>
+                                <option value="Poster Design">Poster Design</option>
+                                <option value="Video Editing">Video Editing</option>
+                                <option value="Social Media">Social Media Handling</option>
+                                <option value="Website Design">Website Design</option>
+                                <option value="Promotions">Promotions</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                    </form>
+
+                    <div class="contact-links">
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="#"><i class="fa-solid fa-globe"></i> Website</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Freelance Portfolio. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-logo"><img src="Company logo.jpeg" alt="Company Logo"></div>
+            <div class="footer-nav">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#promotion">Promotion</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 devxign.tech</p>
+        </div>
     </footer>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/YOUR_NUMBER" class="floating-wa" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
