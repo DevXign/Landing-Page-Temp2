@@ -89,4 +89,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Google Sheets Form Submission
+    const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+    const form = document.forms['google-sheet-form'];
+    
+    if (form) {
+        const submitBtn = form.querySelector('.submit-btn');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.innerText = 'Sending...';
+            submitBtn.disabled = true;
+
+            // Check if user forgot to put URL
+            if (scriptURL === 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE') {
+                setTimeout(() => {
+                    alert('Please replace the scriptURL in script.js with your Google Apps Script Web App URL to actually send data to Google Sheets.');
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                }, 1000);
+                return;
+            }
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    alert('Thanks! Your message has been sent successfully.');
+                    form.reset();
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert('Oops! Something went wrong. Please try connecting again.');
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                });
+        });
+    }
 });
