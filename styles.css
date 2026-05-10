@@ -291,6 +291,7 @@ ul {
     width: 100%;
     max-width: 550px;
     height: auto;
+    margin: -80px 0; /* Adjusting for white space inside the PNG */
 }
 
 .laptop-float, .tools-float, .graph-float, .desk-float {
