@@ -69,7 +69,7 @@ ul {
 }
 
 .section {
-    padding: 6rem 0;
+    padding: 3rem 0;
     min-height: auto;
 }
 
@@ -240,19 +240,19 @@ ul {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 100px;
+    padding: 100px 0 3rem;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
 }
 
