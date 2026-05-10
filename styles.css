@@ -281,9 +281,15 @@ ul {
     margin: 2rem 0;
 }
 
-.anim-svg, .hero-icon-img {
+.anim-svg {
     width: 100%;
     max-width: 300px;
+    height: auto;
+}
+
+.hero-icon-img {
+    width: 100%;
+    max-width: 550px;
     height: auto;
 }
 
