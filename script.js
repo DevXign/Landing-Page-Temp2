@@ -32,19 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     // Theme Toggle
-    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeToggle = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
-    const icon = themeToggleBtn.querySelector('i');
 
-    themeToggleBtn.addEventListener('click', () => {
-        if (htmlEl.getAttribute('data-theme') === 'dark') {
-            htmlEl.setAttribute('data-theme', 'light');
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-        } else {
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
             htmlEl.setAttribute('data-theme', 'dark');
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
+        } else {
+            htmlEl.setAttribute('data-theme', 'light');
         }
     });
 
