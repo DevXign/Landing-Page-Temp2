@@ -1,5 +1,36 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
+    // Offer Popup
+    const popup = document.getElementById('offer-popup');
+    const closeBtn = document.getElementById('close-popup');
+    const ctaBtn = document.getElementById('popup-cta');
+
+    if (popup) {
+        // Show after 3 seconds (Faster response)
+        setTimeout(() => {
+            popup.style.display = 'flex';
+            setTimeout(() => {
+                popup.classList.add('show');
+            }, 10);
+        }, 3000);
+
+        const closePopup = () => {
+            popup.classList.remove('show');
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 400);
+        };
+
+        closeBtn.addEventListener('click', closePopup);
+        ctaBtn.addEventListener('click', closePopup);
+
+        // Close on outside click
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                closePopup();
+            }
+        });
+    }
     // Theme Toggle
     const themeToggleBtn = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
@@ -127,35 +158,5 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     }
-    // Offer Popup
-    const popup = document.getElementById('offer-popup');
-    const closeBtn = document.getElementById('close-popup');
-    const ctaBtn = document.getElementById('popup-cta');
 
-    if (popup) {
-        // Show after 5 seconds
-        setTimeout(() => {
-            popup.style.display = 'flex';
-            setTimeout(() => {
-                popup.classList.add('show');
-            }, 10);
-        }, 5000);
-
-        const closePopup = () => {
-            popup.classList.remove('show');
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 400);
-        };
-
-        closeBtn.addEventListener('click', closePopup);
-        ctaBtn.addEventListener('click', closePopup);
-
-        // Close on outside click
-        popup.addEventListener('click', (e) => {
-            if (e.target === popup) {
-                closePopup();
-            }
-        });
-    }
 });
