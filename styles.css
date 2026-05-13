@@ -560,9 +560,21 @@ ul {
 
 /* Contact Section */
 .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact-left {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.contact-icon-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }
 
 .contact-form {
@@ -572,7 +584,6 @@ ul {
     box-shadow: var(--shadow);
     border: 1px solid var(--border-color);
     width: 100%;
-    max-width: 600px;
 }
 
 .contact-form h2 {
