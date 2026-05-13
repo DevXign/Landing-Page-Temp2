@@ -281,9 +281,15 @@ ul {
     margin: 0;
 }
 
-.anim-svg, .services-icon-img {
+.anim-svg {
     width: 100%;
     max-width: 300px;
+    height: auto;
+}
+
+.services-icon-img {
+    width: 100%;
+    max-width: 450px;
     height: auto;
 }
 
