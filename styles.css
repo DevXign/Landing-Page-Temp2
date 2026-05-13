@@ -300,6 +300,19 @@ ul {
     margin: 0;
 }
 
+/* Theme-specific visibility */
+.light-only {
+    display: none;
+}
+
+[data-theme="light"] .light-only {
+    display: block;
+}
+
+[data-theme="light"] .dark-only {
+    display: none;
+}
+
 .laptop-float, .tools-float, .graph-float, .desk-float {
     animation: float 4s ease-in-out infinite;
 }
