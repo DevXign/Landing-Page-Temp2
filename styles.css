@@ -408,8 +408,8 @@ ul {
     width: 100%;
     max-width: 450px;
     height: auto;
-    margin: -120px 0; /* Aggressively removing internal image white space */
-    pointer-events: none; /* Prevents the image from blocking clicks on buttons */
+    margin: 0 auto;
+    pointer-events: none;
     position: relative;
     z-index: 1;
 }
@@ -418,16 +418,14 @@ ul {
     width: 100%;
     max-width: 550px;
     height: auto;
-    margin-top: -120px; /* Pulling image up aggressively */
-    margin-bottom: -100px; /* Pulling next section up aggressively */
+    margin: 0 auto;
     transition: filter 0.3s ease;
-    /* Glow effect for both light and dark mode */
     filter: drop-shadow(0 0 50px rgba(59, 179, 113, 0.25));
 }
 
 .hero {
-    /* Subtle spotlight effect behind the hero content for both modes */
-    background-image: radial-gradient(circle at 50% 60%, rgba(59, 179, 113, 0.06) 0%, transparent 60%);
+    /* Spotlight effect behind the hero content */
+    background: radial-gradient(circle at center, rgba(59, 179, 113, 0.05) 0%, transparent 70%);
 }
 
 [data-theme="dark"] .hero-icon-img {
