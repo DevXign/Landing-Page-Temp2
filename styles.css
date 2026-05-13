@@ -291,7 +291,7 @@ ul {
     width: 100%;
     max-width: 450px;
     height: auto;
-    margin: -40px 0; /* Removing internal image white space */
+    margin: -120px 0; /* Aggressively removing internal image white space */
 }
 
 .hero-icon-img {
