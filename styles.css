@@ -210,8 +210,8 @@ ul {
     border-radius: 1.5em;
     box-shadow: 0 0 0 0.125em var(--primaryT);
     padding: 0.25em;
-    width: 5em;
-    height: 2.3em;
+    width: 3.2em;
+    height: 1.6em;
     -webkit-appearance: none;
     appearance: none;
     transition: background-color var(--transDur) ease-in-out,
@@ -225,8 +225,8 @@ ul {
     background-color: #fff;
     border-radius: 50%;
     content: "";
-    width: 1.8em;
-    height: 1.8em;
+    width: 1.1em;
+    height: 1.1em;
     display: block;
     transition: 0.3s;
 }
@@ -241,12 +241,12 @@ ul {
 }
 
 .theme__toggle:checked:before {
-    transform: translateX(2.7em);
+    transform: translateX(1.6em);
     background-color: var(--accent-color);
 }
 
 .theme__toggle:checked ~ .theme__icon {
-    transform: translateX(2.7em);
+    transform: translateX(1.6em);
 }
 
 .theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(1) {
