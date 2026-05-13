@@ -1,82 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Freelance</title>
-    <meta name="description" content="Get in touch for your next project.">
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us | devxign.tech</title>
+    <link rel="stylesheet" href="styles.css?v=1.2">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Outfit Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="glass-nav">
-        <nav>
-            <a href="index.html" class="logo">f<span>.</span></a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html"><img src="Company logo.jpeg" alt="Logo"></a>
+            </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#promotion">Promotion</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="btn btn-primary btn-pill mobile-quote-btn">GET QUOTE</a></li>
             </ul>
-            <a href="contact.html" class="btn btn-outline mono">Get Quote</a>
-        </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="container" style="padding-top: 10rem;">
-            <div class="contact-grid">
-                <!-- Left side: Info & Illustration -->
-                <div class="contact-info">
-                    <span class="mono" style="color: var(--accent-color); margin-bottom: 1rem; display: block;">Let's Talk</span>
-                    <h2>Got a project in mind?</h2>
-                    <p>Whether it's a new logo, a poster for your event, or editing a video, let's create something amazing together.</p>
-                    
-                    <!-- Abstract geometric illustration replacing image -->
-                    <div class="contact-illustration glass" style="height: 300px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                        <div style="width: 150px; height: 150px; border-radius: 50%; border: 2px solid var(--text-main); position: absolute; top: -20px; left: -20px; opacity: 0.1;"></div>
-                        <div style="width: 100px; height: 100px; background-color: var(--accent-color); position: absolute; bottom: 40px; right: 40px; border-radius: 8px; transform: rotate(15deg); opacity: 0.8;"></div>
-                        <div style="width: 120px; height: 120px; border-radius: 50%; background-color: var(--text-main); position: absolute; top: 60px; left: 60px;"></div>
-                        <i class="fa-regular fa-paper-plane" style="font-size: 3rem; color: white; z-index: 2; position: relative; top: -10px; left: -10px;"></i>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="#" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
+    <main style="padding-top: 100px; min-height: 80vh; display: flex; align-items: center;">
+        <section id="contact" class="section contact">
+            <div class="container contact-container">
+                <div class="contact-left">
+                    <img src="contact icon.png" alt="Contact Icon" class="contact-icon-img desk-float">
                 </div>
-
-                <!-- Right side: Form -->
-                <div class="contact-form glass">
-                    <form action="#" method="POST" id="inquiry-form">
+                <div class="contact-right">
+                    <form class="contact-form" id="contact-form" name="google-sheet-form">
+                        <h2>Get in touch</h2>
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                            <input type="text" name="Name" placeholder="Name" required>
                         </div>
-                        
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                            <input type="email" name="Email" placeholder="Email" required>
                         </div>
-
                         <div class="form-group">
-                            <label for="service-select">Service Required</label>
-                            <select id="service-select" name="service" class="form-control" required>
-                                <option value="" disabled selected>Select a service</option>
+                            <input type="tel" name="Phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="Service" required>
+                                <option value="" disabled selected>Service needed</option>
                                 <option value="Logo Design">Logo Design</option>
                                 <option value="Poster Design">Poster Design</option>
                                 <option value="Video Editing">Video Editing</option>
+                                <option value="Social Media">Social Media Handling</option>
+                                <option value="Website Design">Website Design</option>
+                                <option value="Promotions">Promotions</option>
                                 <option value="Other">Other</option>
                             </select>
                         </div>
-
                         <div class="form-group">
-                            <label for="message">Project Details</label>
-                            <textarea id="message" name="message" class="form-control" placeholder="Tell me about your project..." required></textarea>
+                            <textarea name="Message" placeholder="Message" rows="4" required></textarea>
                         </div>
-
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                     </form>
                 </div>
             </div>
@@ -84,9 +68,53 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Freelance Portfolio. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="footer-logo"><img src="Company logo.jpeg" alt="Company Logo"></div>
+            <div class="footer-nav">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#promotion">Promotion</a>
+                <a href="index.html#about">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 devxign.tech</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Google Sheets Integration for separate page
+        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+        const form = document.forms['google-sheet-form'];
+        
+        if(form) {
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                const btn = form.querySelector('button');
+                btn.disabled = true;
+                btn.innerHTML = 'Sending...';
+                
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        alert("Thanks for contacting us! We will get back to you soon.");
+                        form.reset();
+                        btn.disabled = false;
+                        btn.innerHTML = 'Submit';
+                    })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        btn.disabled = false;
+                        btn.innerHTML = 'Submit';
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
