@@ -281,7 +281,7 @@ ul {
     margin: 0;
 }
 
-.anim-svg {
+.anim-svg, .services-icon-img {
     width: 100%;
     max-width: 300px;
     height: auto;
