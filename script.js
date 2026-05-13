@@ -3,26 +3,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Offer Popup
     const popup = document.getElementById('offer-popup');
     const closeBtn = document.getElementById('close-popup');
-    const ctaBtn = document.getElementById('popup-cta');
 
     if (popup) {
-        // Show after 3 seconds (Faster response)
+        const closePopup = () => {
+            if (popup.classList.contains('show')) {
+                popup.classList.remove('show');
+                setTimeout(() => {
+                    popup.style.display = 'none';
+                }, 400);
+            }
+        };
+
+        // Show after 3 seconds
         setTimeout(() => {
             popup.style.display = 'flex';
             setTimeout(() => {
                 popup.classList.add('show');
+                
+                // Auto-close after 5 more seconds
+                setTimeout(closePopup, 5000);
             }, 10);
         }, 3000);
 
-        const closePopup = () => {
-            popup.classList.remove('show');
-            setTimeout(() => {
-                popup.style.display = 'none';
-            }, 400);
-        };
-
         closeBtn.addEventListener('click', closePopup);
-        ctaBtn.addEventListener('click', closePopup);
 
         // Close on outside click
         popup.addEventListener('click', (e) => {
