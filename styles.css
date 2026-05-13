@@ -503,9 +503,15 @@ ul {
 
 .pricing-grid {
     display: none;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
     animation: fadeInTab 0.5s ease;
+}
+
+@media (min-width: 1024px) {
+    .pricing-grid.active {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .pricing-grid.active {
