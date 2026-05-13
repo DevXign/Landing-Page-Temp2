@@ -730,10 +730,11 @@ ul {
 
 /* Contact Section */
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 8rem;
+    flex-wrap: wrap;
 }
 
 .contact-left {
@@ -748,12 +749,13 @@ ul {
 }
 
 .contact-form {
-    background: var(--card-bg);
+    background-color: var(--card-bg);
     padding: 3rem;
-    border-radius: 16px;
-    box-shadow: var(--shadow);
+    border-radius: 32px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--border-color);
     width: 100%;
+    max-width: 550px;
 }
 
 .contact-form h2 {
