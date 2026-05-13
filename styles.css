@@ -291,6 +291,7 @@ ul {
     width: 100%;
     max-width: 450px;
     height: auto;
+    margin: -40px 0; /* Removing internal image white space */
 }
 
 .hero-icon-img {
@@ -344,7 +345,7 @@ ul {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .tab-btn {
