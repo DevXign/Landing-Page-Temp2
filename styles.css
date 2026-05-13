@@ -292,6 +292,9 @@ ul {
     max-width: 450px;
     height: auto;
     margin: -120px 0; /* Aggressively removing internal image white space */
+    pointer-events: none; /* Prevents the image from blocking clicks on buttons */
+    position: relative;
+    z-index: 1;
 }
 
 .hero-icon-img {
@@ -347,6 +350,8 @@ ul {
     flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 10; /* Ensures buttons are above the image */
 }
 
 .tab-btn {
