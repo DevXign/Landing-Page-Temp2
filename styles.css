@@ -420,6 +420,17 @@ ul {
     height: auto;
     margin-top: -120px; /* Pulling image up aggressively */
     margin-bottom: -100px; /* Pulling next section up aggressively */
+    transition: filter 0.3s ease;
+}
+
+[data-theme="dark"] .hero-icon-img {
+    /* Glow effect and slight brightness boost for dark mode */
+    filter: drop-shadow(0 0 50px rgba(59, 179, 113, 0.3)) brightness(1.1);
+}
+
+[data-theme="dark"] .hero {
+    /* Subtle spotlight effect behind the hero content in dark mode */
+    background-image: radial-gradient(circle at 50% 60%, rgba(59, 179, 113, 0.08) 0%, transparent 60%);
 }
 
 /* Theme-specific visibility */
