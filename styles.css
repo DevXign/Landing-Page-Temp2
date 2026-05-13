@@ -412,7 +412,7 @@ ul {
     width: 100%;
     max-width: 450px;
     height: auto;
-    margin: 0 auto;
+    margin: -60px auto -60px;
     pointer-events: none;
     position: relative;
     z-index: 1;
