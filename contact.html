@@ -13,7 +13,7 @@
 <body>
     <header class="navbar">
         <nav class="container">
-            <a href="index.html#home" class="logo"><img src="Company logo.jpeg" alt="Company Logo"></a>
+            <a href="index.html" class="logo"><img src="Company logo.jpeg" alt="Company Logo"></a>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
@@ -43,7 +43,6 @@
                 <button class="mobile-menu-btn" aria-label="Menu">⋯</button>
             </div>
         </nav>
-        <!-- Mobile Dropdown Menu -->
         <div class="mobile-dropdown">
             <ul class="mobile-links">
                 <li><a href="index.html#home">Home</a></li>
@@ -117,32 +116,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Google Sheets Integration for separate page
-        const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
-        const form = document.forms['google-sheet-form'];
-        
-        if(form) {
-            form.addEventListener('submit', e => {
-                e.preventDefault();
-                const btn = form.querySelector('button');
-                btn.disabled = true;
-                btn.innerHTML = 'Sending...';
-                
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                    .then(response => {
-                        alert("Thanks for contacting us! We will get back to you soon.");
-                        form.reset();
-                        btn.disabled = false;
-                        btn.innerHTML = 'Submit';
-                    })
-                    .catch(error => {
-                        console.error('Error!', error.message);
-                        btn.disabled = false;
-                        btn.innerHTML = 'Submit';
-                    });
-            });
-        }
-    </script>
 </body>
 </html>
