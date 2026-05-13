@@ -12,16 +12,45 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html"><img src="Company logo.jpeg" alt="Logo"></a>
-            </div>
+        <nav class="container">
+            <a href="index.html#home" class="logo"><img src="Company logo.jpeg" alt="Company Logo"></a>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#promotion">Promotion</a></li>
                 <li><a href="index.html#about">About</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <label for="theme-toggle" class="theme">
+                    <span class="theme__toggle-wrap">
+                        <input id="theme-toggle" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
+                        <span class="theme__fill"></span>
+                        <span class="theme__icon">
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                            <span class="theme__icon-part"></span>
+                        </span>
+                    </span>
+                </label>
+                <a href="contact.html" class="btn btn-primary btn-pill desktop-only">GET QUOTE</a>
+                <button class="mobile-menu-btn" aria-label="Menu">⋯</button>
+            </div>
+        </nav>
+        <!-- Mobile Dropdown Menu -->
+        <div class="mobile-dropdown">
+            <ul class="mobile-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#promotion">Promotion</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="contact.html" class="btn btn-primary btn-pill mobile-quote-btn">GET QUOTE</a></li>
             </ul>
         </div>
