@@ -506,7 +506,7 @@ ul {
 
 .pricing-grid {
     display: none;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     animation: fadeInTab 0.5s ease;
 }
@@ -697,7 +697,7 @@ ul {
 
 .promo-cards-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
 }
@@ -961,6 +961,15 @@ footer {
         font-size: 1.8rem;
         bottom: 20px;
         right: 20px;
+    }
+    .hero {
+        padding: 100px 0 1rem;
+    }
+    .section {
+        padding: 2rem 0;
+    }
+    .contact-container {
+        gap: 3rem;
     }
 }
 
