@@ -38,12 +38,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const htmlEl = document.documentElement;
 
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        htmlEl.setAttribute('data-theme', savedTheme);
+        themeToggle.checked = savedTheme === 'dark';
+    }
+
     themeToggle.addEventListener('change', () => {
-        if (themeToggle.checked) {
-            htmlEl.setAttribute('data-theme', 'dark');
-        } else {
-            htmlEl.setAttribute('data-theme', 'light');
-        }
+        const currentTheme = themeToggle.checked ? 'dark' : 'light';
+        htmlEl.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('theme', currentTheme);
     });
 
     // Mobile Menu Toggle
