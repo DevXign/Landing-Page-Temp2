@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | devxign.tech</title>
+    <title>Privacy Policy | devxign.tech</title>
     <link rel="stylesheet" href="styles.css?v=1.2">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Outfit Font -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .privacy-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .privacy-content p, .privacy-content ul {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .privacy-content ul {
+            padding-left: 1.5rem;
+        }
+        .privacy-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -19,7 +42,7 @@
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#promotion">Promotion</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <label for="theme-toggle" class="theme">
@@ -55,41 +78,39 @@
         </div>
     </header>
 
-    <main style="padding-top: 130px; min-height: 85vh; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
-        <section id="contact" class="section contact">
-            <div class="container contact-container">
-                <div class="contact-left">
-                    <img src="contact icon.png" alt="Contact Icon" class="contact-icon-img desk-float">
+    <main style="padding-top: 130px; min-height: 85vh; width: 100%;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Privacy Policy</h2>
                 </div>
-                <div class="contact-right">
-                    <form class="contact-form" id="contact-form" name="google-sheet-form">
-                        <h2>Get in touch</h2>
-                        <div class="form-group">
-                            <input type="text" name="Name" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="Email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="Phone" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <select name="Service" required>
-                                <option value="" disabled selected>Service needed</option>
-                                <option value="Logo Design">Logo Design</option>
-                                <option value="Poster Design">Poster Design</option>
-                                <option value="Video Editing">Video Editing</option>
-                                <option value="Social Media">Social Media Handling</option>
-                                <option value="Website Design">Website Design</option>
-                                <option value="Promotions">Promotions</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="Message" placeholder="Message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
-                    </form>
+                <div class="privacy-content">
+                    <p>We value your privacy and promise to protect your personal data. Here is a simple breakdown of how we handle your information:</p>
+
+                    <h2>Information We Collect</h2>
+                    <p>When you fill out forms on our website, we may collect your:</p>
+                    <ul>
+                        <li>Name</li>
+                        <li>Email address</li>
+                        <li>Phone number</li>
+                        <li>Project or service details</li>
+                    </ul>
+
+                    <h2>How We Use Your Information</h2>
+                    <p>We use your data to:</p>
+                    <ul>
+                        <li>Answer your questions and deliver our services</li>
+                        <li>Send you project updates</li>
+                        <li>Improve our website and customer support</li>
+                        <li>Keep our internal records accurate</li>
+                    </ul>
+
+                    <h2>Data Protection</h2>
+                    <p>We use strong security measures to keep your private information safe from hackers, leaks, or unauthorized changes.</p>
+
+                    <h2>Your Consent & Updates</h2>
+                    <p>By using our website, you agree to this policy.</p>
+                    <p>We may update this page from time to time, so feel free to check back occasionally.</p>
                 </div>
             </div>
         </section>
