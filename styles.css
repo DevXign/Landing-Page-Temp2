@@ -758,22 +758,22 @@ ul {
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--border-color);
     width: 100%;
-    flex: 1 1 400px;
-    max-width: 550px;
+    flex: 1 1 450px;
+    max-width: 650px;
 }
 
 .contact-form h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     font-size: 2rem;
 }
 
 .form-group {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 .form-group input, .form-group select, .form-group textarea {
     width: 100%;
-    padding: 0.8rem 1rem;
+    padding: 0.7rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
     background: var(--bg-alt);
