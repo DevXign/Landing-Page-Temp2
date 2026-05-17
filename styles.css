@@ -79,7 +79,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    scroll-margin-top: 100px;
 }
 
 /* Scroll Animations */
