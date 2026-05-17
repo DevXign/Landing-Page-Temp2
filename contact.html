@@ -38,9 +38,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="navbar">
         <nav class="container">
-            <a href="index.html" class="logo"><img src="Company logo.jpeg" alt="devxign.tech - Professional Graphic Design, Logo Design, and Video Editing Agency Logo"></a>
+            <a href="index.html" class="logo"><img src="Company logo.jpeg" alt="devxign.tech - Professional Graphic Design, Logo Design, and Video Editing Agency Logo" width="55" height="55"></a>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="index.html#services">Services</a></li>
@@ -82,7 +83,7 @@
         </div>
     </header>
 
-    <main style="padding-top: 130px; min-height: 85vh; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+    <main id="main-content" style="padding-top: 130px; min-height: 85vh; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
         <section id="contact" class="section contact">
             <div class="container contact-container">
                 <div class="contact-left">
@@ -92,16 +93,16 @@
                     <form class="contact-form" id="contact-form" name="google-sheet-form">
                         <h2>Get in touch</h2>
                         <div class="form-group">
-                            <input type="text" name="Name" placeholder="Name" required>
+                            <input type="text" name="Name" placeholder="Name" aria-label="Your Full Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="Email" placeholder="Email">
+                            <input type="email" name="Email" placeholder="Email" aria-label="Your Email Address">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="Phone" placeholder="Phone" required>
+                            <input type="tel" name="Phone" placeholder="Phone" aria-label="Your Phone Number" required>
                         </div>
                         <div class="form-group">
-                            <select name="Service" required>
+                            <select name="Service" aria-label="Select the service you need" required>
                                 <option value="" disabled selected>Service needed</option>
                                 <option value="Logo Design">Logo Design</option>
                                 <option value="Poster Design">Poster Design</option>
@@ -113,7 +114,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea name="Message" placeholder="Message" rows="3"></textarea>
+                            <textarea name="Message" placeholder="Message" aria-label="Your Message Details" rows="3"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                     </form>

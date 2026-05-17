@@ -86,6 +86,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="navbar">
         <nav class="container">
             <a href="#home" class="logo"><img src="Company logo.jpeg" alt="devxign.tech - Professional Graphic Design, Logo Design, and Video Editing Agency Logo" width="55" height="55"></a>
@@ -131,7 +132,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- HOME SECTION -->
         <section id="home" class="section hero section-scroll">
             <div class="container hero-content">
@@ -505,8 +506,8 @@
                         <span>contact@devxign.tech</span>
                     </div>
                     <div class="footer-social" style="margin-top: 1.5rem; justify-content: flex-start;">
-                        <a href="https://wa.me/917483828754" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com/vild_in/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/917483828754" target="_blank" aria-label="Chat with Vild.in on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/vild_in/" target="_blank" aria-label="Follow Vild.in on Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -526,7 +527,7 @@
 
     <div id="offer-popup" class="popup-overlay">
         <div class="popup-content">
-            <button class="popup-close" id="close-popup"><i class="fa-solid fa-xmark"></i></button>
+            <button class="popup-close" id="close-popup" aria-label="Close Special Offer popup"><i class="fa-solid fa-xmark"></i></button>
             <div class="popup-header">
                 <i class="fa-solid fa-gift"></i>
                 <h3>Special Offer!</h3>
