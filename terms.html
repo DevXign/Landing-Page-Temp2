@@ -3,12 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | devxign.tech</title>
+    <title>Terms of Service | devxign.tech</title>
     <link rel="stylesheet" href="styles.css?v=1.2">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Outfit Font -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .privacy-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+        .privacy-content p, .privacy-content ul {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .privacy-content ul {
+            padding-left: 1.5rem;
+        }
+        .privacy-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -19,7 +42,7 @@
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#promotion">Promotion</a></li>
                 <li><a href="index.html#about">About</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <label for="theme-toggle" class="theme">
@@ -55,41 +78,36 @@
         </div>
     </header>
 
-    <main style="padding-top: 130px; min-height: 85vh; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
-        <section id="contact" class="section contact">
-            <div class="container contact-container">
-                <div class="contact-left">
-                    <img src="contact icon.png" alt="Contact Icon" class="contact-icon-img desk-float">
+    <main style="padding-top: 130px; min-height: 85vh; width: 100%;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Terms of Service</h2>
                 </div>
-                <div class="contact-right">
-                    <form class="contact-form" id="contact-form" name="google-sheet-form">
-                        <h2>Get in touch</h2>
-                        <div class="form-group">
-                            <input type="text" name="Name" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="Email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="Phone" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <select name="Service" required>
-                                <option value="" disabled selected>Service needed</option>
-                                <option value="Logo Design">Logo Design</option>
-                                <option value="Poster Design">Poster Design</option>
-                                <option value="Video Editing">Video Editing</option>
-                                <option value="Social Media">Social Media Handling</option>
-                                <option value="Website Design">Website Design</option>
-                                <option value="Promotions">Promotions</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="Message" placeholder="Message" rows="3" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
-                    </form>
+                <div class="privacy-content">
+                    <h2>What We Do</h2>
+                    <p>Vild.in offers design, development, promotions, and student services. We deliver all work based on the agreed plan, timeline, and requirements.</p>
+
+                    <h2>Your Responsibilities</h2>
+                    <p>By using our site and services, you agree to:</p>
+                    <ul>
+                        <li>Give us accurate information when you reach out.</li>
+                        <li>Use our website only for legal activities.</li>
+                        <li>Not misuse our content or services.</li>
+                    </ul>
+
+                    <h2>Ownership (Intellectual Property)</h2>
+                    <p>Everything on this website—including content, designs, and logos—belongs to Vild.in unless we state otherwise. You cannot use our material without permission.</p>
+
+                    <h2>Payments & Pricing</h2>
+                    <ul>
+                        <li>Prices on the website can change.</li>
+                        <li>We will confirm your final price before starting any project.</li>
+                        <li>All payments are non-refundable unless we explicitly agree otherwise in writing.</li>
+                    </ul>
+
+                    <h2>Canceling Services</h2>
+                    <p>We have the right to refuse service or stop working with you if you break these terms.</p>
                 </div>
             </div>
         </section>
