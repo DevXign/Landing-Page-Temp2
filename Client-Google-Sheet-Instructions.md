@@ -13,7 +13,7 @@ To receive contact form submissions directly into your Google Sheet, please foll
 2. Delete any existing code, and paste the script provided below:
 
 ```javascript
-const sheetName = 'Sheet1'
+const sheetName = 'Vild Leads'
 const scriptProp = PropertiesService.getScriptProperties()
 
 function initialSetup () {
