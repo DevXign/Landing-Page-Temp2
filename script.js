@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Google Sheets Form Submission
-    const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwHGzHK2GtNuQhd84ufCASQkw0Ud-CdINEsLqwnfZdtvNtlIzjaEGWRYuC_wqA3i7jQTA/exec';
     const form = document.forms['google-sheet-form'];
     
     if (form) {
