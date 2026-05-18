@@ -405,7 +405,7 @@ ul {
 }
 
 .hero-title {
-    font-size: clamp(2rem, 5vw, 4.5rem);
+    font-size: clamp(1.8rem, 6vw, 4.5rem);
     line-height: 1.2;
     max-width: 900px;
     margin: 0 auto;
@@ -1126,4 +1126,51 @@ footer {
     font-weight: 700;
 }
 
-/* Animations and Responsive Adjustments already handled by existing classes */
+/* Custom scroll offset for fixed header compatibility */
+section, .section {
+    scroll-margin-top: 95px;
+}
+
+/* Enhanced Mobile Spacing & Layout Overrides */
+@media (max-width: 768px) {
+    /* Prevent title and layout cutting behind the fixed navbar on all pages */
+    main#main-content {
+        padding-top: 110px !important;
+        display: block !important;
+        min-height: auto !important;
+    }
+    
+    /* Ensure the home hero section handles fixed navbar height gracefully */
+    .hero {
+        padding: 175px 0 2rem !important;
+    }
+    
+    /* Optimize the huge negative margins of illustrations on mobile to resolve cutoffs and spacing gaps */
+    .hero-icon-img {
+        margin: 0 auto !important;
+        max-width: 320px !important;
+    }
+    
+    .services-icon-img {
+        margin: 0 auto !important;
+        max-width: 290px !important;
+    }
+    
+    /* Fix margins on contact pages to optimize small viewports */
+    .contact-container {
+        gap: 2rem !important;
+    }
+    
+    .contact-left {
+        margin-bottom: 0 !important;
+    }
+    
+    .contact-icon-img {
+        max-width: 300px !important;
+        height: auto !important;
+    }
+    
+    .contact-form {
+        padding: 1.8rem !important;
+    }
+}
