@@ -1142,18 +1142,37 @@ section, .section {
     
     /* Ensure the home hero section handles fixed navbar height gracefully */
     .hero {
-        padding: 175px 0 2rem !important;
+        padding: 125px 0 2rem !important;
     }
     
-    /* Optimize the huge negative margins of illustrations on mobile to resolve cutoffs and spacing gaps */
+    /* Optimize illustration sizes and negative margins on mobile to close up massive spacing gaps */
     .hero-icon-img {
-        margin: 0 auto !important;
-        max-width: 320px !important;
+        margin: -10px auto 0 !important;
+        max-width: 310px !important;
     }
     
     .services-icon-img {
-        margin: 0 auto !important;
+        margin: -70px auto -70px !important;
         max-width: 290px !important;
+    }
+    
+    /* Compress section header and content margins on mobile to eliminate huge empty gaps */
+    .section-header {
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .features-row {
+        margin: 1.5rem 0 !important;
+        gap: 1.2rem !important;
+    }
+    
+    .promo-cards-row {
+        margin-top: 2rem !important;
+        gap: 1.5rem !important;
+    }
+    
+    .special-boxes-container {
+        margin-top: 2.2rem !important;
     }
     
     /* Fix margins on contact pages to optimize small viewports */
