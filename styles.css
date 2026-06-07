@@ -1135,40 +1135,57 @@ section, .section {
 @media (max-width: 768px) {
     /* Prevent title and layout cutting behind the fixed navbar on all pages */
     main#main-content {
-        padding-top: 110px !important;
+        padding-top: 100px !important;
         display: block !important;
         min-height: auto !important;
     }
     
-    /* Reduce global section padding on mobile to eliminate huge dark gaps */
+    /* Reduce global section padding on mobile to eliminate huge gaps */
     section, .section {
-        padding: 1.2rem 0 !important;
+        padding: 1.5rem 0 !important;
     }
     
     /* Ensure the home hero section handles fixed navbar height gracefully */
     .hero {
-        padding: 145px 0 1.5rem !important;
+        padding: 120px 0 1.5rem !important;
     }
     
     /* Optimize illustration sizes and negative margins on mobile to close up massive spacing gaps */
     .hero-icon-img {
-        margin: -35px auto 0 !important;
-        max-width: 300px !important;
+        margin: -20px auto 0 !important;
+        max-width: 280px !important;
     }
     
     .services-icon-img {
-        margin: -65px auto -65px !important;
-        max-width: 280px !important;
+        margin: -40px auto -40px !important;
+        max-width: 260px !important;
     }
     
     /* Compress section header and content margins on mobile to eliminate huge empty gaps */
     .section-header {
-        margin-bottom: 0.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem !important;
+    }
+
+    .tabs {
+        gap: 0.5rem !important;
+        margin-bottom: 2rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    .tab-btn {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.85rem !important;
+        flex: 1 1 calc(50% - 0.5rem); /* two buttons per row on mobile */
+        text-align: center;
     }
     
     .features-row {
         margin: 1.5rem 0 !important;
-        gap: 1.2rem !important;
+        gap: 1.5rem !important;
     }
     
     .promo-cards-row {
@@ -1180,21 +1197,107 @@ section, .section {
         margin-top: 2.2rem !important;
     }
     
+    .special-heading {
+        font-size: 1.4rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
     /* Fix margins on contact pages to optimize small viewports */
     .contact-container {
         gap: 2rem !important;
+        padding: 0 1.5rem !important;
     }
     
     .contact-left {
         margin-bottom: 0 !important;
+        width: 100%;
     }
     
     .contact-icon-img {
-        max-width: 300px !important;
+        max-width: 260px !important;
         height: auto !important;
+    }
+    
+    .contact-right {
+        width: 100%;
     }
     
     .contact-form {
         padding: 1.8rem !important;
+        border-radius: 16px !important;
+    }
+
+    /* Footer Responsive Alignment */
+    .footer-col {
+        text-align: center !important;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem !important;
+    }
+
+    .footer-contact-item {
+        justify-content: center;
+    }
+
+    .footer-social {
+        justify-content: center !important;
+        margin-top: 1rem !important;
+    }
+
+    .footer-bottom {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 1rem !important;
+    }
+
+    .footer-legal-bottom {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem !important;
+    }
+
+    .hero-title {
+        font-size: 1.8rem !important;
+        padding: 0 0.5rem;
+    }
+
+    .tab-btn {
+        flex: 1 1 100%; /* stack tab buttons fully on very small screens */
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .pricing-card {
+        padding: 2rem 1.5rem !important;
+    }
+
+    .special-boxes {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .contact-form {
+        padding: 1.5rem 1.2rem !important;
+    }
+
+    .footer-legal-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-legal-bottom a {
+        margin-right: 0 !important;
     }
 }
