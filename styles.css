@@ -1135,7 +1135,7 @@ section, .section {
 @media (max-width: 768px) {
     /* Prevent title and layout cutting behind the fixed navbar on all pages */
     main#main-content {
-        padding-top: 100px !important;
+        padding-top: 80px !important;
         display: block !important;
         min-height: auto !important;
     }
@@ -1145,9 +1145,9 @@ section, .section {
         padding: 1.5rem 0 !important;
     }
     
-    /* Ensure the home hero section handles fixed navbar height gracefully */
+    /* Ensure the home hero section handles fixed navbar height gracefully with a 1.5 inch (144px) total top gap */
     .hero {
-        padding: 120px 0 1.5rem !important;
+        padding: 64px 0 1.5rem !important;
     }
     
     /* Optimize illustration sizes and negative margins on mobile to close up massive spacing gaps */
